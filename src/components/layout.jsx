@@ -1,3 +1,5 @@
+import Header from "./header";
+
 export function Layout ({children}) {
   return (
     <div className="bg-gradient-to-br from-background to-muted">
