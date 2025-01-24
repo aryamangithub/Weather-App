@@ -8,7 +8,7 @@ export function CurrentWeather ({data, locationName}) {
         wind: {speed},
     } = data
 
-    const formatTemp = (temp) => `${Math.round(temp - 273.15)}°C`
+    const formatTemp = (temp) => `${Math.round(temp)}°C`
 
     return (
         <Card className="overflow-hidden">

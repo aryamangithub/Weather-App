@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
 import {format} from "date-fns"
 
 export function HourlyTemperature ({data}) {
-    const toCelsius = (temp) => temp - 273.15
+    const toCelsius = (temp) => temp
     const chartData = data.list.slice(0,8).map((item)=>({
         time:format(new Date(item.dt * 1000), "ha"),
         temp: Math.round(toCelsius(item.main.temp)),

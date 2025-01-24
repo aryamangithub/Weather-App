@@ -24,7 +24,7 @@ export function WeatherForecast ({ data }) {
     }, {})
 
     const nextDays = Object.values(dailyForecasts).slice(1, 6)
-    const formatTemp = (temp) => `${Math.round(temp - 273.15)}°`
+    const formatTemp = (temp) => `${Math.round(temp)}°`
 
   return (
     <Card>
