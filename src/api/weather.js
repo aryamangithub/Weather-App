@@ -24,7 +24,7 @@ class WeatherAPI {
         const url = this.createUrl(`${API_CONFIG.BASE_URL}/weather`, {
             lat:lat.toString(),
             lon:lon.toString(),
-            units: "metirc",
+            units: "metric",
         })
 
         return this.fetchData(url)
